@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+html,
+body,
+section.login-block {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+}
+
+.login-block {
+  background: #7417ff;
+  background: -webkit-gradient(linear, left top, right top, from(#7417ff), to(#a86eff));
+  background: linear-gradient(90deg, #7417ff 0%, #a86eff 100%);
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(90deg, #7417ff 0%, #a86eff 100%);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  float: left;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.login-block .container {
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 15px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 15px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.login-block .banner-sec {
+  background: url(../images/5.jpg) no-repeat left bottom;
+  background-size: cover;
+  min-height: 500px;
+  border-radius: 0 10px 10px 0;
+  padding: 0;
+}
+
+.login-block .banner-sec .carousel-item {
+  height: 500px;
+}
+
+.login-block .banner-sec .carousel-inner {
+  border-radius: 0 10px 10px 0;
+}
+
+.login-block .login-sec {
+  padding: 50px;
+  position: relative;
+}
+
+.login-block .login-sec .copy-text {
+  margin-top: 1.4rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #000;
+  letter-spacing: 0.1px;
+}
+
+.login-block .login-sec .copy-text a {
+  color: #7417ff;
+  text-decoration: none;
+}
+
+.login-block .login-sec h2.login-title {
+  margin-bottom: 30px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #333;
+}
+
+.login-block .login-sec .CTA-Button .btn-login {
+  background: #7417ff;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.4rem 12px;
+}
+
+.login-block .login-sec .CTA-Button .btn-signup {
+  background: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #7417ff;
+  width: 100%;
+  margin-top: 1rem;
+  border-color: #7417ff;
+  padding: 0.4rem 12px;
+}
+
+.login-block .login-sec label.login-label {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: unset;
+}
+
+.login-block .login-sec input.form-control {
+  border: none;
+  border-bottom: 1.6px solid #7417ff;
+  border-radius: unset;
+  padding: unset;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+  color: #7417ff;
+}
+
+.login-block .login-sec input.form-control:placeholder {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #7417ff;
+}
+
+.login-block .login-sec input.form-control:active,
+.login-block .login-sec input.form-control:focus {
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  border-bottom: 1.6px solid #7417ff;
+}
+
+.login-block .login-sec .form-check small {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+/*# sourceMappingURL=style.css.map */

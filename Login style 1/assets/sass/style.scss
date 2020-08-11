@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap");
+
+$primary-color: #7417ff;
+$secondary-color: #8e5cda;
+$nunito: "Nunito Sans", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: unset;
+}
+html,
+body,
+section.login-block {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: $nunito;
+  font-weight: 400;
+}
+@mixin fontStyle($f, $w, $s, $c) {
+  font: {
+    family: $f;
+    weight: $w;
+    size: $s;
+  }
+  color: $c;
+}
+
+.login-block {
+  background: $primary-color;
+  background: linear-gradient(
+    90deg,
+    rgba(116, 23, 255, 1) 0%,
+    rgba(168, 110, 255, 1) 100%
+  );
+
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(116, 23, 255, 1) 0%,
+    rgba(168, 110, 255, 1) 100%
+  );
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    90deg,
+    rgba(116, 23, 255, 1) 0%,
+    rgba(168, 110, 255, 1) 100%
+  );
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  float: left;
+  width: 100%;
+  padding: 50px 0;
+
+  .container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 15px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .banner-sec {
+    background: url(../images/5.jpg)
+      no-repeat left bottom;
+    background-size: cover;
+    min-height: 500px;
+    border-radius: 0 10px 10px 0;
+    padding: 0;
+
+    .carousel-item {
+      height: 500px;
+    }
+    .carousel-inner {
+      border-radius: 0 10px 10px 0;
+    }
+  }
+
+  .login-sec {
+    padding: 50px;
+    position: relative;
+
+    .copy-text {
+        margin-top: 1.4rem;
+        @include fontStyle($nunito, 600, 14px, #000);
+        letter-spacing: 0.1px;
+
+      a {
+        color: $primary-color;
+        text-decoration: none;
+      }
+    }
+
+    h2.login-title {
+      margin-bottom: 30px;
+      @include fontStyle($nunito, 700, 24px, #333);
+    }
+
+    .CTA-Button {
+    //   margin-top: 1rem;
+      .btn-login {
+        background: $primary-color;
+        @include fontStyle($nunito, 600, 16px, #fff);
+        width: 100%;
+        margin-top: 1rem;
+        padding: 0.4rem 12px;
+      }
+      .btn-signup {
+        background: #fff;
+        @include fontStyle($nunito, 600, 16px, $primary-color);
+        width: 100%;
+        margin-top: 1rem;
+        border-color: $primary-color;        
+        padding: 0.4rem 12px;
+      }
+    }
+
+    label.login-label {
+      @include fontStyle($nunito, 600, 16px, #333);
+      margin-bottom: unset;
+    }
+    
+    input.form-control {
+      border: none;
+      border-bottom: 1.6px solid $primary-color;
+      border-radius: unset;
+      padding: unset;
+      @include fontStyle($nunito, 600, 16px, #333);
+      color: $primary-color;
+
+      &:placeholder {
+        @include fontStyle($nunito, 600, 16px, $primary-color);
+      }
+    }
+    input.form-control:active,
+    input.form-control:focus {
+      box-shadow: unset;
+      border-bottom: 1.6px solid $primary-color;
+    }
+
+    .form-check small{
+        @include fontStyle($nunito, 600, 14px, #333);
+    }
+  }
+}
